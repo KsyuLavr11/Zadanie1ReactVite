@@ -1,26 +1,41 @@
 import logo from './logo.svg';
 import './App.css';
 
+import { jsx as _jsx, jsxs as _jsxs } from 'react/jsx-runtime';
 export const App = () => {
-	return (
-		<div className="App">
-			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
-				<p>
-					Edit <code>src/App.js</code> and save to reload.
-				</p>
-				<a
-					className="App-link"
-					href="https://reactjs.org"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Learn React
-				</a>
-				<h1>{new Date().getFullYear()}</h1> {/* Декларативный код */}
-			</header>
-		</div>
-	);
+	return /*#__PURE__*/ _jsx('div', {
+		className: 'App',
+		children: /*#__PURE__*/ _jsxs('header', {
+			className: 'App-header',
+			children: [
+				/*#__PURE__*/ _jsx('img', {
+					src: logo,
+					className: 'App-logo',
+					alt: 'logo',
+				}),
+				/*#__PURE__*/ _jsxs('p', {
+					children: [
+						'Edit ',
+						/*#__PURE__*/ _jsx('code', {
+							children: 'src/App.js',
+						}),
+						' and save to reload.',
+					],
+				}),
+				/*#__PURE__*/ _jsx('a', {
+					className: 'App-link',
+					href: 'https://reactjs.org',
+					target: '_blank',
+					rel: 'noopener noreferrer',
+					children: 'Learn React',
+				}),
+				/*#__PURE__*/ _jsx('h1', {
+					children: new Date().getFullYear(),
+				}),
+				' ',
+			],
+		}),
+	});
 };
 {
 	/* Весь код императивный, кроме 1го исключения указала в комментариях */
